@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Олег & Ксения — свадебное приглашение</title>
+    <meta
+      name="description"
+      content="Олег и Ксения приглашают на свадьбу 17 июля 2027 года. Кафе «Светлояр», г. Семёнов."
+    />
+    <meta name="theme-color" content="#3f2b1d" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="invite-root">
+      <audio id="weddingMusic" src="assets/audio/music.mp3" loop preload="none"></audio>
+
+      <div class="music-control" id="musicControl">
+        <button
+          type="button"
+          class="music-btn"
+          id="musicBtn"
+          aria-label="Включить музыку"
+          aria-pressed="false"
+        >
+          ♫
+        </button>
+        <p class="music-hint" id="musicHint">Нажмите, чтобы заиграла музыка</p>
+      </div>
+
+      <nav class="nav is-hidden" id="siteNav" aria-label="Разделы приглашения">
+        <button type="button" data-modal="invite">Приглашение</button>
+        <button type="button" data-scroll="date">Дата</button>
+        <button type="button" data-modal="program">Программа</button>
+        <button type="button" data-modal="wishes">Пожелания</button>
+        <button type="button" data-modal="rsvp">Анкета</button>
+      </nav>
+
+      <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="monogram">О <i>&</i> К</p>
+          <h1>Олег<span>&</span>Ксения</h1>
+          <p class="date-line">17 июля 2027</p>
+          <p class="hero-phrase">Мы говорим друг другу главное «да»</p>
+          <a class="scroll-link" href="#date">Листайте вниз</a>
+        </div>
+      </header>
+
+      <section class="countdown" aria-label="Обратный отсчёт">
+        <img src="assets/images/countdown.jpg" alt="" />
+        <div class="countdown-shade"></div>
+        <div class="countdown-inner">
+          <h2 class="countdown-names">Олег<span>&</span>Ксения</h2>
+          <p class="countdown-date">17 июля 2027</p>
+          <p class="countdown-title">Осталось до свадьбы</p>
+          <div class="timer">
+            <div><b id="days">0</b><small>дней</small></div>
+            <div class="timer-sep"></div>
+            <div><b id="hours">00</b><small>часов</small></div>
+            <div class="timer-sep"></div>
+            <div><b id="minutes">00</b><small>минут</small></div>
+            <div class="timer-sep"></div>
+            <div><b id="seconds">00</b><small>секунд</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="location" id="date">
+        <img class="location-bg" src="assets/images/location.jpg" alt="" />
+        <div class="location-shade"></div>
+        <div class="location-card">
+          <p class="kicker">Когда и где</p>
+          <h2>17 июля<br />2027 года</h2>
+          <div class="gold-rule"></div>
+          <div class="location-item">
+            <span>Место</span>
+            <p>Кафе «Светлояр»</p>
+          </div>
+          <div class="gold-rule"></div>
+          <div class="location-item">
+            <span>Адрес</span>
+            <p>г. Семёнов</p>
+          </div>
+          <a
+            class="map-btn"
+            href="https://yandex.ru/maps/?ll=44.574714%2C56.820305&mode=poi&poi%5Bpoint%5D=44.575102%2C56.820957&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D219521319478&utm_source=share&z=14"
+            target="_blank"
+            rel="noreferrer"
+            >Открыть карту</a
+          >
+        </div>
+      </section>
+
+      <section class="panel" id="blocks">
+        <p class="kicker">Откройте блоки</p>
+        <h2>Наша свадьба</h2>
+        <p class="lead">Нажмите на карточку — подробности откроются во всплывающем окне.</p>
+        <div class="cards">
+          <button type="button" class="info-card" data-modal="invite">
+            <small>Письмо</small>
+            <b>Приглашение</b>
+            <span>Дорогие наши, будем рады видеть вас рядом</span>
+          </button>
+          <button type="button" class="info-card" data-modal="program">
+            <small>Расписание</small>
+            <b>Программа дня</b>
+            <span>ЗАГС, фотосессия, сбор гостей и банкет</span>
+          </button>
+          <button type="button" class="info-card" data-modal="wishes">
+            <small>Гостям</small>
+            <b>Пожелания</b>
+            <span>Несколько слов для вашего комфорта</span>
+          </button>
+          <button type="button" class="info-card" data-modal="gallery">
+            <small>Фото</small>
+            <b>Наши моменты</b>
+            <span>Галерея из нашей истории</span>
+          </button>
+          <button type="button" class="info-card info-card-wide" data-modal="rsvp">
+            <small>Анкета</small>
+            <b>Анкета гостя</b>
+            <span>Подтвердите присутствие и выберите напитки</span>
+          </button>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p class="monogram">О <i>&</i> К</p>
+        <p>17.07.2027</p>
+      </footer>
+
+      <div class="envelope" id="envelope">
+        <button type="button" class="envelope-btn" id="openEnvelope" aria-label="Открыть приглашение">
+          <span class="envelope-body" aria-hidden="true">
+            <span class="envelope-paper"></span>
+            <span class="letter">
+              <strong>О <i>&</i> К</strong>
+              <em>17 · 07 · 2027</em>
+            </span>
+            <span class="pocket pocket-left"></span>
+            <span class="pocket pocket-right"></span>
+            <span class="pocket pocket-bottom"></span>
+            <span class="flap"></span>
+            <span class="seal">О&К</span>
+          </span>
+          <span class="envelope-caption">Нажмите, чтобы открыть приглашение</span>
+        </button>
+      </div>
+
+      <div class="modal is-hidden" id="modal" role="dialog" aria-modal="true">
+        <button type="button" class="modal-backdrop" id="modalBackdrop" aria-label="Закрыть"></button>
+        <div class="modal-card" id="modalCard">
+          <button type="button" class="modal-close" id="modalClose" aria-label="Закрыть">×</button>
+          <div id="modalBody"></div>
+        </div>
+      </div>
+
+      <div class="lightbox is-hidden" id="lightbox" role="dialog" aria-modal="true" aria-label="Фотография">
+        <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Закрыть фото">×</button>
+        <img id="lightboxImg" alt="Олег и Ксения" />
+      </div>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="О&К">
+  <rect width="32" height="32" rx="6" fill="#74212c"/>
+  <rect x="6.25" y="6.35" width="19.5" height="1.2" rx="0.4" fill="#b8915b"/>
+  <text x="16" y="22.35" text-anchor="middle" font-family="Georgia, 'Liberation Serif', 'Times New Roman', Times, 'DejaVu Serif', serif" font-size="16" font-weight="700" fill="#f5efe5">ОК</text>
+</svg>
