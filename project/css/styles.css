@@ -269,11 +269,12 @@ body.scroll-lock {
 .timer {
   display: flex;
   justify-content: center;
-  gap: 12px;
+  align-items: flex-start;
+  gap: 18px;
   margin-top: 36px;
 }
 
-.timer div {
+.timer-unit {
   min-width: 72px;
 }
 
@@ -294,8 +295,12 @@ body.scroll-lock {
 
 .timer-sep {
   width: 1px;
-  align-self: stretch;
-  background: rgb(255 255 255 / 55%);
+  min-width: 1px;
+  max-width: 1px;
+  flex: 0 0 1px;
+  height: 52px;
+  margin-top: 10px;
+  background: rgb(255 255 255 / 28%);
 }
 
 .countdown-title {
@@ -937,7 +942,7 @@ fieldset {
     font-size: 58px;
   }
 
-  .timer div {
+  .timer-unit {
     min-width: 58px;
   }
 }

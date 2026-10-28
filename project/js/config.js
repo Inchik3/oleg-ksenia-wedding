@@ -55,12 +55,17 @@ const weddingConfig = {
   ],
 
   gallery: [
-    { src: "assets/images/g1.jpg", alt: "Олег и Ксения на перроне" },
-    { src: "assets/images/g4.jpg", alt: "Олег и Ксения в горах" },
-    { src: "assets/images/g6.jpg", alt: "Олег и Ксения у реки" },
-    { src: "assets/images/g2.jpg", alt: "Олег и Ксения вечером" },
-    { src: "assets/images/countdown.jpg", alt: "Олег и Ксения на набережной" },
-    { src: "assets/images/g5.jpg", alt: "Олег и Ксения вместе" },
+    { src: "assets/images/g1.jpg", alt: "Поцелуй на набережной" },
+    { src: "assets/images/g2.jpg", alt: "Олег держит Ксению на руках у реки" },
+    { src: "assets/images/g3.jpg", alt: "Встреча на перроне" },
+    { src: "assets/images/g4.jpg", alt: "Поцелуй на фоне гор" },
+    { src: "assets/images/g5.jpg", alt: "Селфи с букетом вечером" },
+    { src: "assets/images/g6.jpg", alt: "Вечерний город" },
+    { src: "assets/images/g7.jpg", alt: "Праздничный портрет" },
+    { src: "assets/images/g8.jpg", alt: "Чёрно-белый портрет" },
+    { src: "assets/images/g9.jpg", alt: "Поцелуй на скамейке-сердце" },
+    { src: "assets/images/g10.jpg", alt: "В горах" },
+    { src: "assets/images/g11.jpg", alt: "На скамейке-сердце" },
   ],
 
   rsvp: {
@@ -91,7 +96,8 @@ const weddingConfig = {
      *
      * Пока строка пустая, ответы в таблицу не уходят.
      */
-    googleAppsScriptUrl: "",
+    googleAppsScriptUrl:
+      "https://script.google.com/macros/s/AKfycbwqreadZUgtHhNcwDGQeEcIOxZMXcJ5WvR7MNmNvWdg4Incrmlzt692QrwWJeib8WYSLg/exec",
   },
 };
 

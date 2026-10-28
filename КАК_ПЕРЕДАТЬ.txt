@@ -1,0 +1,17 @@
+Эту папку можно сразу отправить: Telegram, WhatsApp, почта, флешка.
+
+Что внутри
+- project/          — сам сайт (откройте project/index.html в браузере)
+- apps-script/      — код для Google Таблицы (анкета гостей)
+- README.md         — как подключить таблицу и опубликовать
+- .github/          — автопубликация на GitHub Pages
+
+Живая страница уже есть:
+https://inchik3.github.io/oleg-ksenia-wedding/
+
+Ссылка на таблицу вставляется сюда:
+project/js/config.js  →  rsvp.googleAppsScriptUrl
+
+Фото и музыка:
+project/assets/images/
+project/assets/audio/music.mp3
